@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Turbo Solis — Venta, Cambio y Reparación de Turbocompresores Diésel y Gasolina</title>
+  <meta name="description" content="Turbo Solis: taller especializado en venta, cambio y reparación de turbocompresores para motores diésel y gasolina. Atención directa en Estado de México y Pachuca. Cotiza por WhatsApp.">
+  <meta name="keywords" content="reparación de turbos, venta de turbocompresores, cambio de turbo, turbos diésel, turbos gasolina, taller de turbos Pachuca, taller de turbos Estado de México, reconstrucción de turbocompresores, Turbo Solis">
+  <meta property="og:title" content="Turbo Solis — Turbocompresores Diésel y Gasolina">
+  <meta property="og:description" content="Venta, cambio y reparación de turbocompresores. Diagnóstico honesto y atención directa en Estado de México y Pachuca.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="imagenes/fachada-taller-turbo-solis.jpg">
+  <link rel="icon" type="image/png" href="imagenes/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Barlow+Condensed:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- LOADER -->
+<div id="loader" aria-hidden="true">
+  <div class="ld-logo">
+    <img src="imagenes/logo-turbo-solis.png" alt="" class="ld-logo-img">
+    <div class="ld-ring"></div>
+  </div>
+  <div class="ld-brand">
+    <p class="ld-name">TURBO <em>SOLIS</em></p>
+    <p class="ld-tag">Diésel y Gasolina</p>
+  </div>
+  <div class="ld-progress">
+    <div class="ld-track"><div class="ld-fill"></div></div>
+    <p class="ld-note">Cargando</p>
+  </div>
+</div>
+
+<!-- NAV -->
+<nav id="nav" role="navigation" aria-label="Menú principal">
+  <div class="nav-wrap">
+    <a href="#" class="logo" aria-label="Turbo Solis">
+      <img src="imagenes/logo-turbo-solis.png" alt="Turbo Solis — Diésel y Gasolina" class="logo-img">
+    </a>
+    <ul class="nav-links" role="list">
+      <li><a href="#about">Nosotros</a></li>
+      <li><a href="#services">Servicios</a></li>
+      <li><a href="#trabajos">Trabajos</a></li>
+      <li><a href="#why">Ventajas</a></li>
+      <li><a href="#contact" class="nav-cta">Cotizar Ahora</a></li>
+    </ul>
+    <button class="hamburger" id="ham" aria-label="Abrir menú" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<div id="mob" class="mob-menu" role="navigation" aria-label="Menú móvil">
+  <a href="#about">Nosotros</a>
+  <a href="#services">Servicios</a>
+  <a href="#trabajos">Trabajos</a>
+  <a href="#why">Ventajas</a>
+  <a href="#contact">Cotizar Ahora</a>
+</div>
+
+<main>
+
+<!-- HERO -->
+<section id="hero" aria-label="Encabezado principal">
+  <div class="hero-bg" aria-hidden="true"></div>
+  <div class="hero-ov" aria-hidden="true"></div>
+  <canvas id="pcanvas" class="particle-canvas" aria-hidden="true"></canvas>
+
+  <div class="hero-body">
+    <div class="wrap">
+      <p class="hero-eyebrow">Turbo Solis · Estado de México y Pachuca</p>
+      <h1 class="hero-h1">
+        <span class="h1-line"><span class="h1-inner">Venta, Cambio y Reparación</span></span>
+        <span class="h1-line"><span class="h1-inner">de Turbocompresores</span></span>
+        <span class="h1-line h1-accent"><span class="h1-inner">Diésel y Gasolina, Sin Rodeos</span></span>
+      </h1>
+      <p class="hero-typewriter" aria-label="Lo que hacemos">
+        <span class="tw-label">Hacemos:</span>
+        <span class="tw-text" id="twText"></span><span class="tw-cursor" aria-hidden="true">|</span>
+      </p>
+      <p class="hero-p">
+        Le devolvemos a tu motor la potencia que perdió. Diagnóstico claro, piezas de calidad y trato directo con quien realmente revisa tu turbo — sin intermediarios y sin sorpresas en el precio.
+      </p>
+      <div class="hero-btns">
+        <a href="https://wa.me/527712165948?text=Hola%2C%20me%20interesa%20conocer%20m%C3%A1s%20sobre%20los%20servicios%20de%20Turbo%20Solis" target="_blank" rel="noopener noreferrer" class="btn-primary">
+          Cotizar por WhatsApp
+          <svg width="15" height="15" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+            <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+        <a href="#trabajos" class="btn-secondary">Ver Nuestros Trabajos</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero-stats" aria-label="Cifras clave">
+    <div class="wrap">
+      <div class="stats-row">
+        <div class="stat-col">
+          <span class="stat-val" data-hero-count="10" data-prefix="+" data-suffix="">+0</span>
+          <span class="stat-lbl">Marcas de motor atendidas</span>
+        </div>
+        <div class="stat-col">
+          <span class="stat-val" data-hero-count="3" data-prefix="" data-suffix="">0</span>
+          <span class="stat-lbl">Servicios: venta, cambio y reparación</span>
+        </div>
+        <div class="stat-col">
+          <span class="stat-val">Diésel</span>
+          <span class="stat-lbl">y Gasolina — ambos motores</span>
+        </div>
+        <div class="stat-col">
+          <span class="stat-val">Edo. Méx · Pachuca</span>
+          <span class="stat-lbl">Zonas de cobertura</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero-deco" aria-hidden="true">
+    <div class="hero-orb hero-orb--1"></div>
+    <div class="hero-orb hero-orb--2"></div>
+  </div>
+  <div class="hero-badge" aria-hidden="true">
+    <span class="hb-dot"></span>
+    <span class="hb-text">Diagnóstico honesto, siempre</span>
+  </div>
+</section>
+
+<!-- TRUST BAR -->
+<section id="trust" aria-label="Marcas de motor que atendemos">
+  <div class="wrap">
+    <div class="trust-row rev">
+      <p class="trust-label">Marcas que atendemos</p>
+      <div class="trust-chips">
+        <span class="trust-chip">Cummins</span>
+        <span class="trust-chip">Caterpillar</span>
+        <span class="trust-chip">Volvo</span>
+        <span class="trust-chip">Navistar</span>
+        <span class="trust-chip">Perkins</span>
+        <span class="trust-chip">John Deere</span>
+        <span class="trust-chip">Volkswagen</span>
+        <span class="trust-chip">Freightliner</span>
+        <span class="trust-chip">Detroit Diesel</span>
+        <span class="trust-chip">Kenworth</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="section bg-white">
+  <div class="wrap">
+    <div class="about-grid">
+      <div class="about-img-wrap rev from-l">
+        <div class="about-img-main">
+          <img
+            src="imagenes/entrada-taller-turbo-solis.jpg"
+            alt="Entrada del taller Turbo Solis, especialistas en turbocompresores diésel y gasolina" loading="lazy">
+        </div>
+        <div class="about-accent">
+          <p class="a-num">2</p>
+          <p class="a-lbl">Diésel y Gasolina</p>
+        </div>
+      </div>
+      <div class="about-text rev">
+        <p class="eyebrow">Quiénes somos</p>
+        <h2 class="heading heading--shine">Especialistas en Turbocompresores, Sin Intermediarios</h2>
+        <p>Turbo Solis es un taller especializado en la venta, cambio y reparación de turbocompresores, tanto para motores diésel como de gasolina. Nos enfocamos en dar soluciones integrales a quienes buscan recuperar o mejorar el rendimiento de su vehículo, ya sea para uso personal o para flotillas de trabajo.</p>
+        <p>Trabajamos con marcas reconocidas del sector como Cummins, Caterpillar, Volvo, Navistar, Perkins, John Deere, Volkswagen, Freightliner, Detroit Diesel y Kenworth. Nacimos en el Estado de México y hoy también atendemos en Pachuca, siempre con diagnóstico claro, atención profesional y compromiso real con la satisfacción del cliente.</p>
+        <div class="about-stats">
+          <div class="a-stat">
+            <p class="a-stat-n" data-count="10" data-prefix="+" data-suffix=""></p>
+            <p class="a-stat-l">Marcas de motor</p>
+          </div>
+          <div class="a-stat">
+            <p class="a-stat-n" data-count="3" data-prefix="" data-suffix=""></p>
+            <p class="a-stat-l">Venta, cambio y reparación</p>
+          </div>
+          <div class="a-stat">
+            <p class="a-stat-n" data-count="2" data-prefix="" data-suffix=""></p>
+            <p class="a-stat-l">Tipos de motor: diésel y gasolina</p>
+          </div>
+          <div class="a-stat">
+            <p class="a-stat-n">Edo. Méx</p>
+            <p class="a-stat-l">Y ahora también en Pachuca</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services" class="section bg-off">
+  <div class="wrap">
+    <div class="section-head section-head--center rev">
+      <p class="eyebrow">Lo que hacemos</p>
+      <h2 class="heading heading--shine">Todo lo que tu Turbo Necesita, en un Solo Lugar</h2>
+      <p class="sub">Del diagnóstico a la entrega, resolvemos la venta, el cambio y la reparación de tu turbocompresor con información clara.</p>
+    </div>
+    <div class="svc-grid">
+
+      <div class="svc-card rev d1">
+        <span class="svc-num" aria-hidden="true">01</span>
+        <div class="svc-icon ic-gold">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#D2181F" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="8"/>
+            <circle cx="12" cy="12" r="2.4"/>
+            <path d="M12 4v2M12 18v2M4 12h2M18 12h2"/>
+          </svg>
+        </div>
+        <h3>Venta de Turbocompresores</h3>
+        <p>Turbos nuevos y reacondicionados, revisados antes de salir del taller, listos para devolverle a tu motor la potencia que perdió.</p>
+        <p class="svc-models">Compatibles con Cummins · CAT · Navistar · Perkins · Volvo</p>
+        <div class="svc-tags">
+          <span class="tag tag-gold">Diésel</span>
+          <span class="tag tag-gold">Gasolina</span>
+          <span class="tag tag-gold">Nuevos y reacondicionados</span>
+        </div>
+      </div>
+
+      <div class="svc-card rev d2">
+        <span class="svc-num" aria-hidden="true">02</span>
+        <div class="svc-icon ic-gold">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#D2181F" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M14.7 6.3a1 1 0 0 0 1.4 0l1.6-1.6a1 1 0 0 1 1.4 0l1.2 1.2a1 1 0 0 1 0 1.4l-1.6 1.6a1 1 0 0 0 0 1.4l3 3a1 1 0 0 1 0 1.4l-1 1a1 1 0 0 1-1.4 0l-3-3a1 1 0 0 0-1.4 0l-1.6 1.6a1 1 0 0 1-1.4 0l-1.2-1.2a1 1 0 0 1 0-1.4l1.6-1.6a1 1 0 0 0 0-1.4l-3-3a1 1 0 0 1 0-1.4l1-1a1 1 0 0 1 1.4 0z"/>
+            <path d="M3 21l3-1 1-3"/>
+          </svg>
+        </div>
+        <h3>Cambio e Instalación</h3>
+        <p>Retiramos tu turbo dañado e instalamos el equipo correcto, con la calibración adecuada y cuidando cada conexión.</p>
+        <p class="svc-models">Para autos, camionetas, camiones y flotillas</p>
+        <div class="svc-tags">
+          <span class="tag tag-gold">Instalación profesional</span>
+          <span class="tag tag-gold">Calibración</span>
+          <span class="tag tag-gold">Flotillas</span>
+        </div>
+      </div>
+
+      <div class="svc-card rev d3">
+        <span class="svc-num" aria-hidden="true">03</span>
+        <div class="svc-icon ic-gold">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#D2181F" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M12 2v4M12 18v4M4.9 4.9l2.8 2.8M16.3 16.3l2.8 2.8M2 12h4M18 12h4M4.9 19.1l2.8-2.8M16.3 7.7l2.8-2.8"/>
+            <circle cx="12" cy="12" r="4"/>
+          </svg>
+        </div>
+        <h3>Reparación y Reconstrucción</h3>
+        <p>Reconstruimos turbos dañados o desgastados con piezas de calidad, devolviéndoles la presión y el desempeño original.</p>
+        <p class="svc-models">Diagnóstico honesto antes de cotizar</p>
+        <div class="svc-tags">
+          <span class="tag tag-gold">Reconstrucción</span>
+          <span class="tag tag-gold">Diagnóstico honesto</span>
+          <span class="tag tag-gold">Piezas de calidad</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- TRABAJOS -->
+<section id="trabajos" class="section bg-white">
+  <div class="wrap">
+    <div class="prod-header rev">
+      <div>
+        <p class="eyebrow">Trabajos del Taller</p>
+        <h2 class="heading heading--shine">Turbos Reales, Reparados y Listos</h2>
+      </div>
+      <a href="#contact" class="btn-outline">Cotizar un Turbo</a>
+    </div>
+    <div class="prod-grid">
+
+      <div class="prod-card rev d1">
+        <div class="prod-photo">
+          <img src="imagenes/turbos-navistar-reacondicionados.jpg" alt="Turbos Navistar reacondicionados en el taller Turbo Solis" loading="lazy">
+        </div>
+        <h3>Turbos Navistar Reacondicionados</h3>
+        <p>Turbos reacondicionados para motores Navistar, listos para devolver rendimiento a unidades de trabajo pesado.</p>
+        <a class="prod-pill" href="https://wa.me/527712165948?text=Hola%2C%20vi%20los%20turbos%20Navistar%20reacondicionados%2C%20%C2%BFme%20podr%C3%ADan%20dar%20informaci%C3%B3n%20y%20precio%3F" target="_blank" rel="noopener noreferrer">Preguntar precio</a>
+      </div>
+
+      <div class="prod-card rev d2">
+        <div class="prod-photo">
+          <img src="imagenes/turbo-listo-instalacion.jpg" alt="Turbo revisado y listo para instalación en Turbo Solis" loading="lazy">
+        </div>
+        <h3>Turbo Listo para Instalación</h3>
+        <p>Turbo revisado y armado con piezas de calidad, listo para montarse y ponerse a trabajar de inmediato.</p>
+        <a class="prod-pill" href="https://wa.me/527712165948?text=Hola%2C%20vi%20el%20turbo%20listo%20para%20instalaci%C3%B3n%2C%20%C2%BFme%20podr%C3%ADan%20dar%20informaci%C3%B3n%20y%20precio%3F" target="_blank" rel="noopener noreferrer">Preguntar precio</a>
+      </div>
+
+      <div class="prod-card rev d3">
+        <div class="prod-photo">
+          <img src="imagenes/turbos-egr-inventario.jpg" alt="Turbos disponibles en inventario en el taller Turbo Solis" loading="lazy">
+        </div>
+        <h3>Turbos en Inventario</h3>
+        <p>Contamos con turbos disponibles en inventario para resolver tu cambio sin esperar semanas de importación.</p>
+        <a class="prod-pill" href="https://wa.me/527712165948?text=Hola%2C%20quiero%20saber%20qu%C3%A9%20turbos%20tienen%20en%20inventario" target="_blank" rel="noopener noreferrer">Preguntar precio</a>
+      </div>
+
+      <div class="prod-card rev d4">
+        <div class="prod-photo">
+          <img src="imagenes/reparacion-banco-trabajo.jpg" alt="Turbo en reparación sobre banco de trabajo en Turbo Solis" loading="lazy">
+        </div>
+        <h3>Reparación en Banco de Trabajo</h3>
+        <p>Cada turbo pasa por revisión y ajuste en banco de trabajo antes de salir del taller hacia tu vehículo.</p>
+        <a class="prod-pill" href="https://wa.me/527712165948?text=Hola%2C%20necesito%20reparar%20mi%20turbo%2C%20%C2%BFme%20podr%C3%ADan%20dar%20informaci%C3%B3n%20y%20precio%3F" target="_blank" rel="noopener noreferrer">Preguntar precio</a>
+      </div>
+
+    </div>
+    <p class="prod-note rev">No publicamos precios en la página — escríbenos por WhatsApp con la marca y el modelo de tu turbo y con gusto te cotizamos.</p>
+  </div>
+</section>
+
+<!-- WHY -->
+<section id="why" class="section bg-navy">
+  <div class="why-bg" aria-hidden="true"></div>
+  <canvas id="pcanvasWhy" class="particle-canvas" aria-hidden="true"></canvas>
+  <div class="wrap">
+    <div class="why-grid">
+      <div class="why-img-wrap rev from-r">
+        <div class="why-img-main">
+          <img
+            src="imagenes/hero-turbo-holset.jpg"
+            alt="Turbocompresor Holset reacondicionado en el taller Turbo Solis" loading="lazy">
+        </div>
+        <div class="why-img-badge">
+          <p class="wib-n">10+</p>
+          <p class="wib-l">Marcas de motor atendidas</p>
+        </div>
+      </div>
+      <div class="why-content rev">
+        <p class="eyebrow eyebrow--white">Por qué elegirnos</p>
+        <h2 class="heading heading--white heading--shine-dark">La Diferencia Turbo Solis</h2>
+        <p class="sub sub--white">Cambiar o reparar un turbo es una decisión importante para tu vehículo o tu flotilla — la hacemos simple y transparente.</p>
+        <div class="benefit-list">
+          <div class="benefit">
+            <div class="ben-icon ben-icon-g">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#F5C518" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <rect x="3" y="3" width="18" height="14" rx="2"/>
+                <path d="M8 21h8M12 17v4"/>
+                <path d="M8 8l3 3 5-5"/>
+              </svg>
+            </div>
+            <div>
+              <h4>Diagnóstico Honesto</h4>
+              <p>Te decimos exactamente qué necesita tu turbo antes de cotizar, sin cargos ocultos ni sorpresas.</p>
+            </div>
+          </div>
+          <div class="benefit">
+            <div class="ben-icon ben-icon-g">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#F5C518" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/>
+              </svg>
+            </div>
+            <div>
+              <h4>Atención Directa</h4>
+              <p>Hablas directo con quien conoce tu turbo, sin intermediarios ni vendedores externos.</p>
+            </div>
+          </div>
+          <div class="benefit">
+            <div class="ben-icon ben-icon-g">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#F5C518" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="12" cy="12" r="10"/>
+                <line x1="2" y1="12" x2="22" y2="12"/>
+                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+              </svg>
+            </div>
+            <div>
+              <h4>Cobertura en Expansión</h4>
+              <p>Nacimos en el Estado de México y ahora también atendemos en Pachuca, Hidalgo.</p>
+            </div>
+          </div>
+          <div class="benefit">
+            <div class="ben-icon ben-icon-g">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#F5C518" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M5 17h14M5 17a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm14 0a2 2 0 1 0 4 0 2 2 0 0 0-4 0zM3 17V9l2-4h11l3 4h2v8"/>
+              </svg>
+            </div>
+            <div>
+              <h4>Diésel y Gasolina</h4>
+              <p>Atendemos turbocompresores de autos, camionetas y camiones de trabajo, diésel y a gasolina por igual.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CÓMO FUNCIONA -->
+<section id="numbers">
+  <div class="numbers-bg" aria-hidden="true"></div>
+  <div class="numbers-ov" aria-hidden="true"></div>
+  <div class="wrap">
+    <div class="section-head section-head--center rev">
+      <p class="eyebrow eyebrow--white">Cómo funciona</p>
+      <h2 class="heading heading--white heading--shine-dark">Cotiza tu Turbo en 4 Pasos</h2>
+    </div>
+    <div class="numbers-grid">
+      <div class="number-item rev d1">
+        <p class="num-v">01</p>
+        <p class="num-l">Cuéntanos qué turbo necesitas o qué falla presenta tu vehículo</p>
+      </div>
+      <div class="number-item rev d2">
+        <p class="num-v">02</p>
+        <p class="num-l">Te damos diagnóstico y precio claro por WhatsApp o llamada</p>
+      </div>
+      <div class="number-item rev d3">
+        <p class="num-v">03</p>
+        <p class="num-l">Programamos el cambio, la reparación o la entrega de tu turbo</p>
+      </div>
+      <div class="number-item rev d4">
+        <p class="num-v">04</p>
+        <p class="num-l">Te vas con tu vehículo trabajando con toda su potencia</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GALERÍA -->
+<section id="galeria">
+  <canvas id="pcanvasGaleria" class="particle-canvas" aria-hidden="true"></canvas>
+  <div class="wrap">
+    <div class="brands-head rev">
+      <p class="eyebrow eyebrow--white">Nuestro Taller</p>
+      <h2 class="heading heading--white heading--shine-dark">Así Sale Cada Turbo de Nuestras Manos</h2>
+      <p class="brands-sub">Revisado, limpio y listo para rendir — así trabajamos cada turbocompresor que pasa por el taller.</p>
+    </div>
+    <div class="brands-grid">
+      <div class="brand-card rev d1">
+        <div class="brand-card-inner">
+          <img src="imagenes/turbos-compactos-taller.jpg" alt="Turbos compactos en anaquel del taller Turbo Solis" loading="lazy">
+        </div>
+      </div>
+      <div class="brand-card rev d2">
+        <div class="brand-card-inner">
+          <img src="imagenes/turbo-detalle-rotax.jpg" alt="Detalle de turbocompresor Rotax reparado en Turbo Solis" loading="lazy">
+        </div>
+      </div>
+      <div class="brand-card rev d3">
+        <div class="brand-card-inner">
+          <img src="imagenes/par-turbos-reconstruidos.jpg" alt="Par de turbocompresores reconstruidos en el taller Turbo Solis" loading="lazy">
+        </div>
+      </div>
+    </div>
+    <p class="brands-note rev">Marcas con las que trabajamos: Cummins · Caterpillar · Volvo · Navistar · Perkins · John Deere · Volkswagen · Freightliner · Detroit Diesel · Kenworth</p>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section bg-off">
+  <div class="wrap">
+    <div class="contact-grid">
+
+      <div class="contact-info rev from-l">
+        <div class="contact-info-bg" aria-hidden="true"></div>
+        <div class="contact-info-content">
+          <p class="eyebrow eyebrow--white">Contáctanos</p>
+          <h2 class="heading heading--white">Cotiza el Cambio o Reparación de tu Turbo</h2>
+          <p class="sub sub--white" style="margin-bottom:32px">Cuéntanos la marca y el modelo de tu vehículo y te respondemos directo por WhatsApp o llamada. Atendemos Estado de México y Pachuca.</p>
+          <div class="c-item">
+            <div class="c-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#D2181F" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.27h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.91a16 16 0 0 0 6 6l.91-.91a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 21.73 16.27z"/>
+              </svg>
+            </div>
+            <div>
+              <p class="c-label">Teléfono / WhatsApp</p>
+              <p class="c-value"><a href="tel:+527712165948">771 216 5948</a></p>
+            </div>
+          </div>
+          <div class="c-item">
+            <div class="c-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#D2181F" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/>
+              </svg>
+            </div>
+            <div>
+              <p class="c-label">WhatsApp directo</p>
+              <p class="c-value"><a href="https://wa.me/527712165948" target="_blank" rel="noopener noreferrer">+52 1 771 216 5948</a></p>
+            </div>
+          </div>
+          <div class="c-item">
+            <div class="c-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#D2181F" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/>
+                <circle cx="12" cy="10" r="3"/>
+              </svg>
+            </div>
+            <div>
+              <p class="c-label">Cobertura</p>
+              <p class="c-value">Estado de México y Pachuca, Hidalgo</p>
+            </div>
+          </div>
+          <div class="c-item">
+            <div class="c-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#D2181F" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="12" cy="12" r="10"/>
+                <polyline points="12 6 12 12 16 14"/>
+              </svg>
+            </div>
+            <div>
+              <p class="c-label">Atención</p>
+              <p class="c-value">Escríbenos por WhatsApp, te respondemos a la brevedad</p>
+            </div>
+          </div>
+          <div class="c-item">
+            <div class="c-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#D2181F" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                <path d="M8 21h8M15 6.5a3 3 0 1 1-6 0"/>
+              </svg>
+            </div>
+            <div>
+              <p class="c-label">Redes sociales</p>
+              <p class="c-value"><a href="https://www.facebook.com/share/1GGsXMSoRW/" target="_blank" rel="noopener noreferrer">Facebook: Turbo Solis</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="rev">
+        <div class="form-wrap">
+          <h3>Solicitar Cotización</h3>
+          <p class="form-sub">Te respondemos a la brevedad por WhatsApp o teléfono con información sobre tu turbo.</p>
+          <form id="cForm" novalidate>
+            <div class="frow">
+              <div class="fg">
+                <label class="fl" for="fn">Nombre completo *</label>
+                <input class="fi" type="text" id="fn" name="nombre" placeholder="Su nombre completo" required autocomplete="name">
+              </div>
+              <div class="fg">
+                <label class="fl" for="ft">Teléfono *</label>
+                <input class="fi" type="tel" id="ft" name="telefono" placeholder="771 000 0000" required autocomplete="tel">
+              </div>
+            </div>
+            <div class="fg">
+              <label class="fl" for="fs">Servicio que buscas *</label>
+              <select class="fi" id="fs" name="tipo" required>
+                <option value="">Seleccione una opción</option>
+                <option value="Venta de turbocompresor">Venta de turbocompresor</option>
+                <option value="Cambio e instalación">Cambio e instalación</option>
+                <option value="Reparación o reconstrucción">Reparación o reconstrucción</option>
+                <option value="Diagnóstico">Diagnóstico</option>
+                <option value="Otro">Otro</option>
+              </select>
+            </div>
+            <div class="fg">
+              <label class="fl" for="fm">Cuéntanos qué buscas</label>
+              <textarea class="fi" id="fm" name="mensaje" rows="3" placeholder="Marca, modelo y año de tu vehículo, o la falla que presenta tu turbo..."></textarea>
+            </div>
+            <button type="submit" class="btn-submit">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+              </svg>
+              Cotizar por WhatsApp
+            </button>
+          </form>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="map-card rev">
+      <a class="map-link" href="https://maps.app.goo.gl/RYuaghphz5d5KrAd9" target="_blank" rel="noopener noreferrer" aria-label="Abrir la ubicación de Turbo Solis en Google Maps">
+        <img class="map-frame" src="imagenes/entrada-taller-turbo-solis.jpg" alt="Fachada del taller Turbo Solis" loading="lazy" style="object-fit:cover">
+        <span class="map-tag">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/>
+          </svg>
+          Ver ubicación en Google Maps
+        </span>
+      </a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- FOOTER -->
+<footer>
+  <div class="foot-bg" aria-hidden="true"></div>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <div class="foot-logo">
+          <img src="imagenes/logo-turbo-solis.png" alt="Turbo Solis" class="foot-logo-img">
+        </div>
+        <p class="foot-desc">Taller especializado en venta, cambio y reparación de turbocompresores para motores diésel y gasolina. Atención directa en Estado de México y Pachuca.</p>
+        <div class="foot-social">
+          <a href="https://www.facebook.com/share/1GGsXMSoRW/" target="_blank" rel="noopener noreferrer" aria-label="Turbo Solis en Facebook" class="foot-social-btn">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M22 12a10 10 0 1 0-11.56 9.88v-6.99H7.9V12h2.54V9.8c0-2.5 1.49-3.89 3.78-3.89 1.1 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56V12h2.78l-.44 2.89h-2.34v6.99A10 10 0 0 0 22 12z"/></svg>
+          </a>
+          <a href="https://wa.me/527712165948" target="_blank" rel="noopener noreferrer" aria-label="Turbo Solis en WhatsApp" class="foot-social-btn">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347M12.05 21.79h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884"/></svg>
+          </a>
+        </div>
+      </div>
+      <div>
+        <p class="foot-col-title">Servicios</p>
+        <ul class="foot-links">
+          <li><a href="#services">Venta de Turbocompresores</a></li>
+          <li><a href="#services">Cambio e Instalación</a></li>
+          <li><a href="#services">Reparación y Reconstrucción</a></li>
+          <li><a href="#services">Diagnóstico</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="foot-col-title">Trabajos</p>
+        <ul class="foot-links">
+          <li><a href="#trabajos">Turbos Navistar</a></li>
+          <li><a href="#trabajos">Turbo Listo para Instalación</a></li>
+          <li><a href="#trabajos">Reparación en Banco</a></li>
+          <li><a href="#trabajos">Ver todos los trabajos</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="foot-col-title">Contacto</p>
+        <ul class="foot-links">
+          <li><a href="tel:+527712165948">771 216 5948</a></li>
+          <li><a href="https://wa.me/527712165948" target="_blank" rel="noopener noreferrer">WhatsApp directo</a></li>
+          <li><a href="https://www.facebook.com/share/1GGsXMSoRW/" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+          <li><a href="#contact">Cotizar Ahora</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <p>© 2026 <span>Turbo Solis</span>. Todos los derechos reservados.</p>
+      <p>Estado de México y Pachuca, México</p>
+    </div>
+  </div>
+</footer>
+
+<!-- FLOATING ACTION BUTTONS -->
+<div class="fab-stack">
+  <div class="fab-item">
+    <span class="fab-tip">Síguenos en Facebook</span>
+    <a href="https://www.facebook.com/share/1GGsXMSoRW/"
+       target="_blank"
+       rel="noopener noreferrer"
+       class="fab-btn fb-btn"
+       aria-label="Visitar Turbo Solis en Facebook">
+      <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true">
+        <path fill="#fff" d="M22 12a10 10 0 1 0-11.56 9.88v-6.99H7.9V12h2.54V9.8c0-2.5 1.49-3.89 3.78-3.89 1.1 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56V12h2.78l-.44 2.89h-2.34v6.99A10 10 0 0 0 22 12z"/>
+      </svg>
+    </a>
+  </div>
+  <div class="fab-item">
+    <span class="fab-tip">Escríbenos por WhatsApp</span>
+    <a href="https://wa.me/527712165948"
+       target="_blank"
+       rel="noopener noreferrer"
+       class="fab-btn wa-btn"
+       aria-label="Contactar por WhatsApp">
+      <svg viewBox="0 0 24 24" width="26" height="26" aria-hidden="true">
+        <path fill="#fff" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+      </svg>
+    </a>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
